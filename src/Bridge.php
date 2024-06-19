@@ -22,7 +22,7 @@ use Slim\Interfaces\CallableResolverInterface;
  */
 class Bridge
 {
-    public static function create(ContainerInterface $container = null): App
+    public static function create(?ContainerInterface $container = null): App
     {
         $container = $container ?: new Container;
 
